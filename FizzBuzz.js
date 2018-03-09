@@ -13,88 +13,26 @@
 
  Astuce: Savoir si un nombre est multiple peut s'écrire avec le symbole Modulo noté "%"
 
-    Hakim
-     /*if (nombre === 9%3)
-        {
-            return ('Fizz')
-        }
-        else if (nombre === 10%5) {
+ 20 / 5 = 4
+ 20 % 5 = 0
 
-
-        // Benjamin
-        if (nombre%3 === 0) {
-        return ("Fizz")
-            }
-            else if (nombre%5 === 0) {
-                return ("Buzz")
-            }
-            else if (nombre%3 === 0 && nombre%5 === 0) {
-                return ("FizzBuzz")
-            }
-            // your code here
-        
-                }
-
-        // Benjamin
-        if (nombre%3 === 0) {
-            return ("Fizz")
-        }
-        else if (nombre%5 === 0) {
-            return ("Buzz")
-        }
-        else if (nombre%3 === 0 && nombre%5 === 0) {
-            return ("FizzBuzz")
-        }
-
-        // Tommy
-          if (nombre%3 === 0) {
-                return ('fizz')
-            }
-            else if (nombre%5 === 0) {
-                return ('buzz')
-            }
-            else if ((nombre%5 === 0) && (nombre%3 === 0)) {
-                return ('fizzbuzz')
-            } 
-            else if ( (nombre%3 !== 0) &&  (nombre%5 !== 0)) {
-
-            }
-
-
-            //emilia
-
-
-if ((nombre%3 === 0) && (nombre%5 === 0)){
-    return('FizzBuzz')
-}
-else if (nombre%3 === 0){
-    return ('Fizz')
-}
-else if (nombre%5 === 0){
-    return ('Buzz')
-}
-
-else if ((nombre%3 !== 0) && (nombre%5 !== 0)){
-    return(nombre)
-}
-else {
-    return(null)
-}
-          
-
-   
-
+ Anthony
+  if (nombre % 3 === 0 && nombre % 5 === 0) {
+    return "FizzBuzz";
+  }
+  
 */
 
 function FizzBuzz(nombre) {
-  if (nombre % 3 === 0 && nombre % 5 === 0) {
+  const mop = nombre % 5 === 0;
+  const map = nombre % 3 === 0;
+
+  if (mop && map) {
     return "FizzBuzz";
-  } else if (nombre % 3 === 0) {
+  } else if (map) {
     return "Fizz";
-  } else if (nombre % 5 === 0) {
+  } else if (mop) {
     return "Buzz";
-  } else if (isNaN(nombre)) {
-    return null;
   }
 }
 
